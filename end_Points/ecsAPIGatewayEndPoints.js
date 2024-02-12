@@ -1,0 +1,23 @@
+const ecsAPIGateway={
+    reset_parcel_Cache:"/ecs/v1/reset_parcel_cache",
+    update_parcel_status:"/ecs/v1/update_parcel_status",
+    robot_events:"/ecs/v1/robot_events",
+    robot_unload_request:"/ecs/v1/robot_unload_request",
+    robot_unload_completion_ack:"/ecs/v1/robot_unload_completion_ack",
+    bin_detail_byID:"/ecs/v1/getBinById?bin_id=",
+    update_feeder_status:"/ecs/v1/update_feeder_status",
+    all_bin_status:"/ecs/v1/getBinStatus",
+    update_bins:"/ecs/v1/update_bins",
+    get_item_details:"/ecs/v1/get_item_detail",
+    update_bin_status:"/ecs/v1/update_bin_status",
+    delete_bin_status:"ecs/v1/clear_bins",
+    send_dummy_rack_status:"ecs/v1/send_dummy_rack_status",
+    get_bin_count:"/ecs/v1/getBinStateCounts",
+    manual_putaway:"/ecs/v1/manual_putaway",
+    delink_parcel:"/ecs/v1/delink_parcel",
+    link_parcel:"/ecs/v1/link_parcel",
+    close_bag:"/ecs/v1/close_bag",
+    bag_seal_update:"/ecs/v1/bag_seal_change",
+    bag_handover:"/ecs/v1/bag_handover_request"
+}
+exports.ecsAPIGateway=ecsAPIGateway;

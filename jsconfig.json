@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "allowJs": true,
+        "checkJs": true,
+        "strict": true,
+        "lib": ["dom", "es6"],
+        "module": "CommonJS"
+    },
+    "include" : [
+        "test/specs/*.js",
+        "test/specs/*.json",
+        "**/*.json",
+        "**/*.js",
+        "node_modules/@wdio/sync", "test/specs/Parcel_Sorting/Scan_and_put/Live_run/PJ_Sort_Logic",
+    ],
+    "exclude": ["node_modules"]
+}

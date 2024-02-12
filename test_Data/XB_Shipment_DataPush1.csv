@@ -1,0 +1,32 @@
+TestCase_Name,Test_Data,AWB,ORDERID,DEST_CODE,SHIPMENTIDENTIFIER,MOTs,WLIMIT,NDC_CODE,weight,length,height,breadth,VOLWEIGHT,PTL_ID,Bin_id,DescName
+TestCase_01.spec.js,DT_02,UBR0269S,9455212101,RTO/UDN,RVP,E,6,null,4,45,35,35,3,9023,A023,Verify when scanned parcel has DWSCapturedLength/breadth/height exactly equals to servicable Limits returning PTLID
+TestCase_02.spec.js,DT_08,UBR1138S,9455212107,RTO/UDN,FWD,S,10,null,8,32,21,18,8,9186,A022,Verify when scanned parcel has max of (DWSVolumetricWeight DWSCapturedWeight) = 8kg 
+TestCase_03.spec.js,DT_03,UBR0067S,9455212102,SRT/RTO,FWD,S,6,null,4,35,30,35,3,9229,A012,Verify scanned parcel has combination of ShipmentIdentifier=FWD MOT=S dest_code(SDP)=NDC_Code(Sort config)
+TestCase_04.spec.js,DT_04,UBR0627S,9455212103,RTO/UDN,FWD,S,6,null,5,20,20,20,6,9186,A022,Verify scanned parcel has MOT=Any in sort config and combination of ShipmentIdentifier=FWD MOT=S dest_code(SDP)=NDC_Code(Sort config)
+TestCase_05.spec.js,DT_10,UBR1167S,9455212109,RTO/KTG,FWD,E,0,null,3,32,21,18,5,9028,A032,Verify scanned parcel has WL=0 and combination of ShipmentIdentifier=FWD MOT=S return PTLID
+TestCase_06.spec.js,DT_11,UBR0228S,9455212110,RTO/KTG,FWD,E,4,null,3,32,21,18,5,9028,A032,"Verify scanned parcel with combination of WL>7 ,ShipmentIdentifier=FWD ,MOT=E"
+TestCase_07.spec.js,DT_12,UBR0131S,9455212111,Kanti,FWD,E,4,null,3,32,21,18,4,9027,A031,"Verify scanned parcel with combination of max weight of shipment = Wlimit,ShipmentIdentifier=FWD,MOT=E"
+TestCase_08.spec.js,DT_14,UBR0847S,9455212113,SRT/RTO/R182,RTO,S,4,null,3,32,21,18,3,9030,A034,"Verify scanned parcel with combination of Parcel Parcel FWD, MOT=E max weight of shipment <WLimit ,MOT matched with MOT=E"
+TestCase_09.spec.js,DT_13,UBR0189S,9455212112,SRT/RTO/R182,RTO,S,4,null,3,32,21,18,3,9030,A034,"Verify scanned parcel with combination of RTO ,MOT =S ,Ndc_code= null and MOT =S is found"
+TestCase_10.spec.js,DT_15,UBR0798S,9455212114,SRT/RTO/R178,RVP,S,4,null,3,32,21,18,3,9031,A035,"Verify scanned parcel with combination of MOT =S ,RVP Ndc_code= null MOT =S is NOT found,matched with ANY"
+TestCase_11.spec.js,DT_17,UBR0891S,9455212116,SRT/RTO,RTO,S,4,SRT/RTO/R186,3,32,21,18,3,9032,A024,"Verify scanned parcel with combination of RTO ,MOT =S ,ndc_code != null and SDP.ndc_code=sort config.ndc_code"
+TestCase_12.spec.js,DT_18,UBR1173S,9455212117,CCU/HUB,RTO,S,4,CCU/HUB/R123,3,32,21,18,3,9033,A044,"Verify scanned parcel with combination of RTO,MOT =S,ndc_code != null and Match not found for SDP.ndc_code=sort config.ndc_code"
+TestCase_13.spec.js,DT_19,UBR0564S,9455212118,BBN/IRC,RVP,E,4,BBN/IRC,3,32,21,18,3,9034,A025,"Verify scanned parcel with combination of RVP ,MOT =E and nc_code != null ,sort config: E => LGM  sort COnfig: ANY => 9034"
+TestCase_14.spec.js,DT_20,UBR0012S,9455212119,CCU/TOL,RVP,E,5,CCU/TOL/R12,3,32,21,18,3,9035,A013,"Verify scanned parcel with combination of RVP,MOT =E ,ndc_code != null,Match not found for SDP.ndc_code=sort config.ndc_code,MOT =E (not found in sort config)"
+TestCase_15.spec.js,DT_21,UBR0155S,9455212120,Siliguri,RTO,E,5,null,3,32,21,18,3,9036,A043,"Verify scanned parcel with combination of MOT=E,RTO and ndc_code = null SDP.dest_code=sortConfig.ndc_code"
+TestCase_16.spec.js,DT_22,UBR0178S,9455212121,ROURKELA,RVP,E,5,null,3,32,21,18,3,9037,A014,"Verify scanned parcel with combination of MOT =E,RVP,Ndc_code= null and MOT =S is NOT found, matched with ANY"
+TestCase_17.spec.js,DT_23,UBR0435S,9455212122,Siliguri,RTO,E,5,Siliguri,3,32,21,18,3,9036,A043,"Verify scanned parcel with combination of MOT=E ,RTO ,ndc_code != nullSDP.ndc_code=sort config.ndc_code"
+TestCase_18.spec.js,DT_24,UBR0540S,9455212123,CCU/HUB,RTO,E,5,CCU/HUB,3,32,21,18,3,9033,A044,"Verify scanned parcel with combination of MOT=E ,RTO ,ndc_code != null SDP.ndc_code=sort config.ndc_code with MOT=ANY"
+TestCase_19.spec.js,DT_25,UBR1051S,9455212124,Siliguri,RTO,E,5,Siliguri/R123,3,32,21,18,3,9036,A043,"Verify scanned parcel with combination of MOT=E ,RTO ,ndc_code!=null and SDP.dest_code=sortConfig.ndc_code"
+Delink_Link.spec.spec.js,DT_30,UBR0268S,9455212101,RTO/UDN,RVP,E,6,null,4,44,34,34,4,9023,A023,
+PS_SP_LIVERUN_RJT33_01,DT_01,UBR1009S,9455212100,RTO/UDN,RVP,E,6,null,4,46,36,36,3,,,
+PS_SP_LIVERUN_RJT32_02,DT_05,UBR1052S,9455212104,RTO/FDD,FWD,S,6,null,5,20,21,24,6,,,
+PS_SP_LIVERUN_RJT32_01,DT_06,UBR0676S,9455212105,Samod,FWD,S,6,null,5,20,11,2,6,,,
+PS_SP_LIVERUN_RJT33_02,DT_07,UBR0072S,9455212106,RTO/UDN,FWD,S,10,null,8,32,21,18,8.5,,,
+PS_SP_LIVERUN_RJT32_03,DT_09,UBR0955S,9455212108,SRT/RTE,FWD,S,10,null,7,32,21,18,5,,,
+PS_SP_LIVERUN_RJT32_04,DT_16,UBR0746S,9455212115,BOM/SA-VASAI,RVP,S,4,null,3,32,21,18,3,,,
+PS_SP_LIVERUN_RJT32_05,DT_26,UBR0841S,9455212125,SRT/RTO/R231,RTO,E,6,SRT/RTO/R230,3,32,21,18,3,,,
+PS_SP_LIVERUN_RJT19,DT_27,12345DNF5432100,DNF rejection,,,,,,,,,,,,,
+PS_SP_LIVERUN_RJT32_06,DT_28,UBR01010,7634207349,BOM/SA-VASAI,FWD,S,3,DEL/BGN/R14,5,10,5,5,5,,,
+manual_putaway.spec.js,DT_29,1.23E+14,7634207375,RTO/FDD,RTO,E,3,CCU/HUB,3,24,25,26,5,9033,A044,
+closeBag.spec.js,DT_31,UBR1100S,9455212109,RTO/UDN,RTO,S,10,null,6,31,20,17,3,9029,A033,
